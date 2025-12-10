@@ -1,7 +1,7 @@
 package handlers
 
 import (
-"net/http"
+	"net/http"
 )
 
 var homeHTML = []byte(`<!DOCTYPE html>
@@ -118,14 +118,14 @@ body {
 `)
 
 func ServeHome(w http.ResponseWriter, r *http.Request) {
-if r.URL.Path != "/" {
-http.Error(w, "Not found", http.StatusNotFound)
-return
-}
-if r.Method != http.MethodGet {
-http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
-return
-}
-w.Header().Set("Content-Type", "text/html; charset=utf-8")
-w.Write(homeHTML)
+	if r.URL.Path != "/" {
+		http.Error(w, "Not found", http.StatusNotFound)
+		return
+	}
+	if r.Method != http.MethodGet {
+		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
+		return
+	}
+	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+	w.Write(homeHTML)
 }
