@@ -1,3 +1,5 @@
+// Package client implements the WebSocket client for the Octo chat application.
+// It manages the connection lifecycle and message pumps for each client.
 package client
 
 import (

@@ -1,3 +1,4 @@
+// Package hub provides the central coordinator for managing WebSocket clients and broadcasting messages in the chat application.
 package hub
 
 import (
