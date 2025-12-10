@@ -1,0 +1,30 @@
+{
+    "go.goroot": "/snap/go/10984",
+    "go.gopath": "/home/shahid/go",
+    "go.toolsGopath": "/home/shahid/go",
+    "go.inferGopath": false,
+    "go.alternateTools": {
+        "gopls": "/home/shahid/go/bin/gopls",
+        "dlv": "/home/shahid/go/bin/dlv"
+    },
+    "gopls": {
+        "ui.diagnostic.staticcheck": true,
+        "build.directoryFilters": [
+            "-node_modules"
+        ]
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "go.useLanguageServer": true,
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "golang.go"
+    },
+    "go.buildOnSave": "workspace",
+    "go.lintOnSave": "workspace",
+    "go.vetOnSave": "workspace",
+    "go.testOnSave": false,
+    "go.coverOnSave": false
+}
